@@ -7,9 +7,9 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n;
+        ll n;
         cin >> n;
-        vector<int> a(n);
+        vector<ll> a(n);
         for (int i = 0; i < n - 1; i++)
         {
             cin >> a[i];
@@ -29,7 +29,7 @@ int main()
         if(a[n-2]!=total)
         {
             a[n-1]=total;
-            vector<int> ar;
+            vector<ll> ar;
             for(int i=n-2;i>=0;i--)
             {
                 ar.push_back(a[i+1]-a[i]);
@@ -70,7 +70,7 @@ int main()
                 {visit[a[i]-a[i-1]]=true;}
             }
         }
-        vector<int> miss;
+        vector<ll> miss;
         for(int i=1;i<=n;i++)
         {
             if(!visit[i])
